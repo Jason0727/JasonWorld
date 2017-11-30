@@ -31,7 +31,7 @@ Page({
                     var temp = {
                         id:video.id,
                         name: name,
-                        created_at: util.getDiffTime(Date.parse(video.created_at) / 1000,true),
+                        created_at: util.getDiffTime(video.time,true),
                         profile_image: video.profile_image,
                         videouri: video.video_uri,
                         love: video.love,

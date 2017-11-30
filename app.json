@@ -18,35 +18,38 @@
         "pages/setting/others/scroll-view/scroll-view"
     ],
     "window": {
-        "navigationBarBackgroundColor": "#4A6141",
-        "backgroundColor": "#4A6141",
-        "enablePullDownRefresh": true
+        "navigationBarBackgroundColor": "#ECC0A8",
+        "backgroundColor": "#ECC0A8"
     },
     "tabBar": {
         "borderStyle": "white",
-        "selectedColor": "#4A6141",
+        "selectedColor": "#F5F5F5",
         "color": "#333",
-        "backgroundColor": "#fff",
+        "backgroundColor": "#ECC0A8",
         "position": "bottom",
         "list": [
             {
                 "pagePath": "pages/say/say",
                 "iconPath": "images/icon/say1.png",
+                "text":"说说",
                 "selectedIconPath": "images/icon/say2.png"
             },
             {
                 "pagePath": "pages/video/video",
                 "iconPath": "images/icon/video1.png",
+                "text": "视频",
                 "selectedIconPath": "images/icon/video2.png"
             },
             {
                 "pagePath": "pages/post/post",
                 "iconPath": "images/icon/book1.png",
+                "text": "阅读",
                 "selectedIconPath": "images/icon/book2.png"
             },
             {
                 "pagePath": "pages/setting/setting",
                 "iconPath": "images/icon/set1.png",
+                "text": "设置",
                 "selectedIconPath": "images/icon/set2.png"
             }
         ]

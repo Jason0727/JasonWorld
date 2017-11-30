@@ -1,4 +1,5 @@
 {
     "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "设 置"
+    "navigationBarTitleText": "设 置",
+    "navigationBarBackgroundColor": "#ECC0A8"
 }

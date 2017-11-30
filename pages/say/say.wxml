@@ -1,7 +1,7 @@
 <view class="grid-container">
 <view class="comment-detail-box">
   <view class="comment-main-box">
-    <block wx:for="{{says}}" wx:key="key">
+    <block wx:for="{{says}}" wx:key="key" wx:for-index="idx">
     <!-- 说说头开始 -->
       <view class="comment-item">
         <view class="comment-item-header">
@@ -23,13 +23,13 @@
           <!-- 图片开始 -->
           <view class="comment-img" wx:if="{{item.imgs.length!=0}}">
             <block wx:for="{{item.imgs}}" wx:for-item="img" wx:for-index="imgIdx" wx:key="key">
-              <image src="{{img}}" mode="aspectFill" catchtap="previewImg" data-say-idx="{{item.id}}" data-img-idx="{{imgIdx}}"></image>
+              <image src="{{img}}" mode="aspectFill" catchtap="previewImg" data-say-idx="{{idx}}" data-img-idx="{{imgIdx}}"></image>
             </block>
           </view>
           <!-- 图片结束 -->
         </view>
         <!-- 说说体结束 -->
-        <view class="comment-time">{{item.created_at}}</view>
+         <view class="comment-time">{{item.created_at}}</view> 
       </view>
     </block>
   </view>

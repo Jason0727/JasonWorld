@@ -1,5 +1,6 @@
 {
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "视频",
-    "enablePullDownRefresh": true
+    "enablePullDownRefresh": true,
+    "navigationBarBackgroundColor": "#ECC0A8"
 }

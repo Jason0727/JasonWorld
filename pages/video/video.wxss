@@ -3,7 +3,7 @@
   padding: 15rpx; 
   margin-top: 15rpx; 
   margin-bottom: 15rpx;
-  background-color: white;
+  background-color: "#FAFAFA";
 } 
 .userAvator{
   border-radius: 50%;

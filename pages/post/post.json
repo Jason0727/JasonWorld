@@ -1,4 +1,5 @@
 {
     "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "文 字"
+    "navigationBarTitleText": "文 字",
+    "navigationBarBackgroundColor": "#ECC0A8"
 }

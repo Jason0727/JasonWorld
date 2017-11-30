@@ -21,14 +21,16 @@ Page({
                 var says = [];
                 for (var idx in saysData.data) {
                     var say = saysData.data[idx];
+                    
                     var name = say.username;
                     if (name.length >= 15) {
                         name = name.substring(0, 6) + "...";
                     }
+                    console.log(say.time);
                     var temp = {
                         id: say.id,
                         name: name,
-                        created_at: util.getDiffTime(Date.parse(say.created_at) / 1000, true),
+                        created_at: util.getDiffTime(say.time,true),
                         avatar: say.avatar,
                         txt: say.txt,
                         imgs: say.imgs
@@ -39,9 +41,9 @@ Page({
                     }
                     says.push(temp);
                 }
+                
                 var totalSays = []
                 totalSays = that.data.says.concat(says);
-                console.log(totalSays);
                 that.setData({
                     says: totalSays,
                     current_page: that.data.current_page + 1,
@@ -49,7 +51,7 @@ Page({
                 });
             },
             fail: function () {
-                console.log("加载失败");
+                // console.log("加载失败");
             },
             complete: function () {
                 wx.hideNavigationBarLoading();
@@ -72,7 +74,6 @@ Page({
     },
     //下拉刷新(可多次触发)
     onPullDownRefresh: function (event) {
-        console.log('下拉刷新');
         //显示loading状态
         wx.showNavigationBarLoading();
         this.data.current_page = 1;
@@ -84,9 +85,8 @@ Page({
         this.requestSaysData(refreshUrl);
         wx.stopPullDownRefresh();
     },
-    //触底事件(只会被触发一次)
+    //触底事件
     onReachBottom: function (event) {
-        console.log("加载更多");
         //显示loading状态
         wx.showNavigationBarLoading();
         var last_page = this.data.last_page;

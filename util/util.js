@@ -155,7 +155,6 @@ function getRandomColor() {
     return '#' + rgb.join('')
 }
 
-
 module.exports = {
     getDiffTime: getDiffTime,
     convertToStarsArray:convertToStarsArray,

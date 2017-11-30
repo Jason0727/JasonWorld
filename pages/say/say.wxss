@@ -1,5 +1,6 @@
 .grid-container{
     padding: 0;
+    background-color: "#FAFAFA";
 }
 .comment-detail-box {
   position: relative;
@@ -32,8 +33,9 @@
 }
 
 .comment-item-header .left-img image {
-  height: 80rpx;
-  width: 80rpx;
+    border-radius: 50%;
+    height: 80rpx;
+    width: 80rpx;
 }
 
 .comment-item-header .right-user {
@@ -70,7 +72,7 @@
 
 .comment-time {
   margin-top: 10rpx;
-  color: #ccc;
+  color: red;
   font-size: 24rpx;
 }
 

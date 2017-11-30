@@ -193,7 +193,7 @@
     line-height: 60rpx;
     width: 120rpx;
     height: 60rpx;
-    background-color: #4A6141;
+    background-color: #339933;
     border-radius:5rpx;
     color: #fff;
     text-align: center;
