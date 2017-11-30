@@ -1,0 +1,37 @@
+<view class="grid-container">
+<view class="comment-detail-box">
+  <view class="comment-main-box">
+    <block wx:for="{{says}}" wx:key="key">
+    <!-- 说说头开始 -->
+      <view class="comment-item">
+        <view class="comment-item-header">
+          <view class="left-img">
+            <image src="{{item.avatar}}"></image>
+          </view>
+          <view class="right-user">
+            <text class="user-name">{{item.name}}</text>
+          </view>
+        </view>
+        <!-- 说说头结束 -->
+        <!-- 说说体开始 -->
+        <view class="comment-body">
+        <!-- 文字开始 -->
+          <view class="comment-txt" wx:if="{{item.txt}}">
+            <text>{{item.txt}}</text>
+          </view>
+          <!-- 文字结束 -->
+          <!-- 图片开始 -->
+          <view class="comment-img" wx:if="{{item.imgs.length!=0}}">
+            <block wx:for="{{item.imgs}}" wx:for-item="img" wx:for-index="imgIdx" wx:key="key">
+              <image src="{{img}}" mode="aspectFill" catchtap="previewImg" data-say-idx="{{item.id}}" data-img-idx="{{imgIdx}}"></image>
+            </block>
+          </view>
+          <!-- 图片结束 -->
+        </view>
+        <!-- 说说体结束 -->
+        <view class="comment-time">{{item.created_at}}</view>
+      </view>
+    </block>
+  </view>
+</view>
+</view>

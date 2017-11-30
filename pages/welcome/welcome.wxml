@@ -1,0 +1,7 @@
+<view class="container">
+    <image class="avatar" src="/images/avatar/jason.png"></image>
+    <text class="motto">Jason Word</text>
+    <view catchtap="onTapJump" class="journey-container">
+        <text class="journey">ENTER</text>
+    </view>
+</view>
